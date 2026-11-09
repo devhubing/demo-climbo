@@ -14,7 +14,7 @@
   var NAV = navEl ? JSON.parse(navEl.textContent) : {};
   NAV.tabs = NAV.tabs || {}; NAV.nav = NAV.nav || {}; NAV.options = NAV.options || {};
   var HERE = decodeURIComponent(location.pathname.split('/').pop());
-  function go(file) { if (file && file !== HERE) { location.href = file; return true; } return false; }
+  function go(file) { if (file && file !== HERE) { location.href = file + location.search; return true; } return false; }
   function label(e) { return (e.textContent || '').replace(/\s+/g, ' ').trim(); }
 
   function el(n) { return n === 'body' ? document.body : document.querySelector('[data-n="' + n + '"]'); }
