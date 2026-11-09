@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SISTEMA RECENSIONI *****</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/favicon-HxEcZ9Ht.png" />
+      <script type="module" crossorigin src="./assets/main-CQOPi_nH.js"></script>
+      <link rel="modulepreload" crossorigin href="./assets/chunk-vendor-dwIEn6KD.js">
+      <link rel="modulepreload" crossorigin href="./assets/chunk-tiptap-BL6QzLPX.js">
+      <link rel="modulepreload" crossorigin href="./assets/chunk-lodash-Aw0pChXK.js">
+      <link rel="modulepreload" crossorigin href="./assets/chunk-react-vendor-DjT_KI3Q.js">
+      <link rel="stylesheet" crossorigin href="./assets/styles-CtPDR2nd.css">
+      <link rel="stylesheet" crossorigin href="./assets/styles-CcMGwnYQ.css">
+      <link rel="stylesheet" crossorigin href="./assets/styles-6LiInFPg.css">
+    
+<style id="theme-vars">
+:root {
+--ds-color-charcoal: #1C1C1E !important;
+--ds-color-offwhite: #FFFFFF !important;
+--ds-background: #fcfcfc !important;
+--ds-background-75: rgb(0 0 0 / 0.75) !important;
+--ds-background-50: rgb(0 0 0 / 0.5) !important;
+--ds-background-20: rgb(0 0 0 / 0.2) !important;
+--ds-background-10: rgb(0 0 0 / 0.1) !important;
+--ds-background-5: rgb(0 0 0 / 0.05) !important;
+--ds-primary-dark: rgb(0 0 0) !important;
+--ds-primary: #000000 !important;
+--ds-primary-75: rgb(0 0 0 / 0.75) !important;
+--ds-primary-50: rgb(0 0 0 / 0.5) !important;
+--ds-primary-20: rgb(0 0 0 / 0.2) !important;
+--ds-primary-10: rgb(0 0 0 / 0.1) !important;
+--ds-primary-5: rgb(0 0 0 / 0.05) !important;
+--ds-secondary-dark: rgb(0 0 0) !important;
+--ds-secondary: #000000 !important;
+--ds-secondary-75: rgb(0 0 0 / 0.75) !important;
+--ds-secondary-50: rgb(0 0 0 / 0.5) !important;
+--ds-secondary-20: rgb(0 0 0 / 0.2) !important;
+--ds-secondary-10: rgb(0 0 0 / 0.1) !important;
+--ds-secondary-5: rgb(0 0 0 / 0.05) !important;
+--ds-corners: 0.4375rem !important;
+--ds-input-background: #FFFFFF !important;
+--ds-input-border-color: rgb(0 0 0 / 0.1) !important;
+--ds-input-border-color-hover: rgb(0 0 0 / 0.5) !important;
+--ds-input-border-color-focus: #1C1C1E !important;
+--ds-input-placeholder-color: rgb(28 28 30 / 0.5) !important;
+--ds-input-color: #1C1C1E !important;
+--ds-input-label: #1C1C1E !important;
+--ds-input-label-size: 1rem !important;
+--ds-button-primary-background: #000000 !important;
+--ds-hover-button-primary-background: rgb(0 0 0) !important;
+--ds-button-primary-text: #FFFFFF !important;
+--ds-button-secondary-background: rgb(0 0 0 / 0.1) !important;
+--ds-hover-button-secondary-background: rgb(0 0 0 / 0.15) !important;
+--ds-button-secondary-text: #000000 !important;
+--ds-title-color-page: #1C1C1E !important;
+--ds-title-font-size: 1.25rem !important;
+--ds-card-background: #FDFDFD !important;
+--ds-card-border-color: rgb(28 28 30 / 0.03) !important;
+--ds-tabs-border-color: rgb(28 28 30 / 0.03) !important;
+--ds-tabs-background: rgb(0 0 0 / 0.75) !important;
+--ds-tabs-active-background: #FFFFFF !important;
+--ds-tabs-active-text-color: #000000 !important;
+--ds-tabs-text-color: rgb(0 0 0 / 0.9) !important;
+--ds-tabs-text: 1rem !important;
+--ds-bg-active-menu-button: #FFFFFF !important;
+--ds-text-active-menu-button: #000000 !important;
+--ds-bg-inactive-menu-button: transparent !important;
+--ds-hover-bg-inactive-menu-button: rgb(255 255 255 / 0.1) !important;
+--ds-text-inactive-menu-button: rgb(255 255 255 / 0.75) !important;
+--ds-hover-text-inactive-menu-button: #FFFFFF !important;
+--navigation-background: #000000 !important;
+--navigation-color: #FFFFFF !important;
+--navigation-icon: #000000 !important;
+--ds-primary-contrast: #1C1C1E !important;
+--ds-main-color: #1C1C1E !important;
+--ds-font-family: Inter !important;
+--ds-h-button: 2.25rem !important;
+--ds-w-icon-button: 2.25rem !important;
+--ds-py-button: 0.5rem !important;
+--ds-px-button: 1rem !important;
+--ds-h-input: 2.5rem !important;
+--ds-py-input: 0.625rem !important;
+--ds-px-input: 1rem !important;
+--ds-checkbox-checked: #000000 !important;
+--ds-bg-checkbox-checked: transparent !important;
+--ds-checkbox-text-color: #1C1C1E !important;
+--ds-checkbox-text: 1rem !important;
+--ds-radio-button-text-color: #1C1C1E !important;
+--ds-radio-button-text: 1rem !important;
+--ds-bg-switch-checked: #000000 !important;
+--ds-text-size-components: 1rem !important;
+--ds-table-border-color: rgb(0 0 0 / 0.1) !important;
+--ds-table-text-color: #1C1C1E !important;
+--ds-table-header-padding-bottom: 0.75rem !important;
+--ds-table-row-padding: 1rem !important;
+--ds-table-text-header-font: 0.875rem !important;
+--ds-table-text-header-font-color: rgb(28 28 30 / 0.75) !important;
+--ds-table-text-row-font: 1rem !important;
+--ds-table-text-row-font-color: #1C1C1E !important;
+--ds-table-hover-row: rgb(0 0 0 / 0.05) !important;
+--ds-dialog-title-color: #1C1C1E !important;
+--ds-dialog-title-font-size: 1.125rem !important;
+--ds-dialog-description-color: rgb(28 28 30 / 0.75) !important;
+--ds-dialog-description-font-size: 1rem !important;
+--ds-toast-text-font-size: 1rem !important;
+--ds-icon-button-text-color: rgb(187, 187, 187) !important;
+--ds-icon-button-text-color_hover: rgb(92, 92, 92) !important;
+--ds-icon-button-background: transparent !important;
+--ds-icon-button-background-hover: rgb(240, 240, 240) !important;
+--ds-separator-color: rgb(0 0 0 / 0.1) !important;
+--ds-tooltip-text-color: #1C1C1E !important;
+--ds-typography-color: #1C1C1E !important;
+--ds-select-selected: #000000 !important;
+--ds-login-primary-color: #000000 !important;
+}
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/favicon-HxEcZ9Ht.png">
+<meta property="og:image" content="https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/favicon-HxEcZ9Ht.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/favicon-HxEcZ9Ht.png">
+<meta property="og:title" content="SISTEMA RECENSIONI *****">
+<meta property="og:type" content="website">
+<meta name="apple-mobile-web-app-title" content="SISTEMA RECENSIONI *****">
+<meta name="twitter:title" content="SISTEMA RECENSIONI *****">
+<script>
+(function(){
+  const theme = {"brand_name":"SISTEMA RECENSIONI *****","favicon":"https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/favicon-HxEcZ9Ht.png","logo":"https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/logo-ctAFzQyp.png","email_logo":null,"login":"https://cdn.mylocalbusiness.io/assets/default/login.png","login_primary_color":"#000000","primary_color":"#000000","secondary_color":null,"font":"Inter","border_radius":7,"menu_position":"left","powered_by":"https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/powered_by-J9YkjiwN.png","powered_by_url":"https://www.sistemarecensioni.it","ai_name":"AI Recensioni","banner_settings":{"text":"Sei nel periodo di prova","cta_label":"Attiva ora","cta_link":"https://sistemarecensioni.it/","enabled":false},"active_clients_banner_settings":{"text":null,"cta_label":null,"cta_link":null,"enabled":false},"chatbot_settings":{"enabled":true,"title":"Supporto Clienti","subtitle":"Chiedimi qualcosa","greeting_message":"Ciao! 👋 Come possiamo aiutarti oggi?","placeholder_text":"Scrivi il tuo messaggio..."},"guides_settings":{"enabled":true},"ai_settings":{"geo_agent":{"name":null,"color":null,"logo":"https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/geo_agent-e7nazS6Q.png"},"reply_agent":{"name":null,"color":null,"logo":"https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/reply_agent-zVloR0zI.png"},"share_agent":{"name":null,"color":null,"logo":"https://cdn.mylocalbusiness.io/prod/6a0da32b35d8382203570c15/theme/share_agent-qnBZNjpa.png"},"prompt_sentence":null,"logo":null}};
+  const serializedTheme = JSON.stringify(theme);
+  if (localStorage.getItem("theme") !== serializedTheme) {
+    localStorage.setItem("theme", serializedTheme);
+  }
+  const agencyId = "6a0da32b35d8382203570c15";
+  const serializedAgency = JSON.stringify(agencyId);
+  if (localStorage.getItem("agencyId") !== serializedAgency) {
+    localStorage.setItem("agencyId", serializedAgency);
+  }
+})();
+</script>
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="SISTEMA RECENSIONI *****">
+<link rel="manifest" href="/manifest.json">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("/sw.js").catch(function() {});
+  });
+}
+</script>
+</head>
+
+    <body>
+        <div id="root"></div>
+        <div id="customCode"></div>
+    </body>
+</html>
